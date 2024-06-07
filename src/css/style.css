@@ -438,28 +438,6 @@ h1, h2, h3, h4, h5, h6 {
 #about .about-right {
   position: relative;
 }
-#about .about-right .background1 {
-  top: 20%;
-  left: 8%;
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  border-radius: 100%;
-  background-color: rgba(82, 11, 173, 0.4901960784);
-  filter: blur(35px);
-  z-index: -1;
-}
-#about .about-right .background2 {
-  top: 33%;
-  left: 23%;
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  border-radius: 100%;
-  background-color: rgba(110, 20, 155, 0.368627451);
-  filter: blur(35px);
-  z-index: -1;
-}
 #about .about-right .hydra-vr {
   color: #c4b2f8;
 }

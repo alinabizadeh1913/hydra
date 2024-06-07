@@ -537,28 +537,6 @@ $margin-padding-xl: 25px;
   }
   .about-right{
     position: relative;
-    .background1{
-      top: 20%;
-      left: 8%;
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      border-radius: 100%;
-      background-color: #520bad7d;
-      filter: blur(35px);
-      z-index: -1;
-    }
-    .background2{
-      top: 33%;
-      left: 23%;
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      border-radius: 100%;
-      background-color: #6e149b5e;
-      filter: blur(35px);
-      z-index: -1;
-    }
     .hydra-vr{
       color: $text-color-white;
     }

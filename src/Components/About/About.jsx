@@ -36,9 +36,6 @@ const About = () => {
                     <div className="col-12 col-lg-7">
                         <div className="about-right">
 
-                            <div className="background1"></div>
-                            <div className="background2"></div>
-
                             <h3 className="title text-white text-center text-lg-start d-none d-lg-block">
                                 ABOUT
                             </h3>
