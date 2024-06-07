@@ -26,7 +26,7 @@ const Navbar = () => {
         window.addEventListener('scroll', e => {
             const scrollY = window.scrollY;
             if (scrollY > 150) {
-                navbar.current.style.background = '#17193470'
+                navbar.current.style.background = '#5c19af70'
             }else{
                 navbar.current.style.background = ''
             }
