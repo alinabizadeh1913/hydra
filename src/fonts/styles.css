@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'iranyekanwebbold';
+  src: url(./iranyekanwebbold.eot);
+  src: url(./iranyekanwebbold.eot?#iefix) format('embedded-opentype'),
+       url(./iranyekanwebbold.ttf) format('truetype'),
+       url(./iranyekanwebbold.woff) format('woff'),
+       url(./iranyekanwebbold.woff2) format('woff2'),
+       url(./iranyekanwebbold.svg#iranyekanwebbold) format('svg');
+}
