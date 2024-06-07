@@ -118,12 +118,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navbar {
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(20px);
   position: sticky;
   left: 0;
   right: 0;
   top: 0px;
   z-index: 5;
+  transition: 0.313s ease;
 }
 #navbar .navbar-inner .logo {
   display: flex;

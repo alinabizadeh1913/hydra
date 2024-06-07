@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 
 const Navbar = () => {
 
+    const navbar = useRef();
     const join = useRef();
 
     useEffect(() => {
@@ -21,8 +22,19 @@ const Navbar = () => {
         })
     }, [])
 
+    useLayoutEffect(() => {
+        window.addEventListener('scroll', e => {
+            const scrollY = window.scrollY;
+            if (scrollY > 150) {
+                navbar.current.style.background = '#17193470'
+            }else{
+                navbar.current.style.background = ''
+            }
+        })
+    }, [])
+    
     return (
-        <section id="navbar">
+        <section id="navbar" ref={navbar}>
             <nav className="container py-4">
                 <div className="navbar-inner w-100 d-flex flex-wrap align-items-center justify-content-between">
                     <div className="logo">

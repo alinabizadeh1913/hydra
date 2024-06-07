@@ -171,12 +171,13 @@ $margin-padding-xl: 25px;
 // Navbar
 
 #navbar{
-      backdrop-filter: blur(12px);
+      backdrop-filter: blur(20px);
       position: sticky;
       left: 0;
       right: 0;
       top: 0px;
       z-index: 5;
+      transition: 0.313s ease;
   .navbar-inner{
     .logo{
       display: flex;
