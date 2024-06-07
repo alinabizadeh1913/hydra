@@ -170,8 +170,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.313s ease;
 }
 #navbar .navbar-inner .contact-join .contact:hover {
-  background-color: rgba(66, 35, 96, 0.9176470588);
-  border-color: rgba(66, 35, 96, 0.9176470588);
+  background-color: rgba(119, 54, 255, 0.9215686275);
+  border-color: rgba(119, 54, 255, 0.9215686275);
 }
 #navbar .navbar-inner .contact-join .contact button {
   color: #fff;
