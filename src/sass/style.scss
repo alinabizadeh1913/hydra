@@ -7,6 +7,7 @@ $text-dark : #000;
 $text-white : #fff;
 $bg-white : #fff;
 $border-color-white : #c4b2f84c;
+$border-color-white-2 : #c4b2f8;
 $border-white : #fff;
 // Color
 
@@ -107,7 +108,7 @@ $margin-padding-xl: 25px;
 }
 @font-face {
   font-family: font-6;
-  src: url("..//fonts/Montserrat-Regular.svg") format("svg");
+  src: url("../fonts/Montserrat-Regular.svg") format("svg");
   src: url("../fonts/Montserrat-Regular.ttf") format("ttf");
   src: url("../fonts/Montserrat-Regular.woff") format("woff");
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
@@ -603,6 +604,197 @@ $margin-padding-xl: 25px;
 }
 
 // About
+
+// Why Build
+
+#why-build{
+  margin: 65px 0;
+  .why-build-left{
+    .title{
+      cursor: default;
+    }
+    .with-hydra{
+      color: $text-color-white;
+      span{
+        cursor: pointer;
+        &:hover + .arrow-right{
+          .line{
+            width: 95px;
+          }
+          .right{
+            left: 73px;
+          }
+        }
+      }
+      .arrow-right{
+        user-select: none;
+        .right{
+          width: 16px;
+          height: 16px;
+          border-top: 3px solid #fff;
+          border-right: 3px solid #fff;
+          transform: rotate(45deg);
+          transition: 0.313s ease;
+          position: relative;
+          left: 61px;
+          border-radius: 2px;
+        }
+        .line{
+          position: absolute;
+          height: 2.5px;
+          background-color: #fff;
+          top: 6.5px;
+          left: -6px;
+          width: 83px;
+          border-radius: 10px;
+          transition: 0.313s ease;
+        }
+      }
+    }
+  }
+  .why-build-right{
+    .text{
+      color: $text-color-white;
+    }
+  }
+}
+
+// Why Build
+
+// Card
+
+#cards{
+  #skeleton{
+    .skeleton-inner{
+      background: radial-gradient(#3f3c4e, #211E2E);
+      border-radius: 30px;
+      padding: $margin-padding-lg;
+      .skeleton-image{
+        .skeleton-image-inner{
+          width: 170px;
+          height: 170px;
+          border-radius: 100%;
+          background-color: #0e0e0e5a;
+          padding: $margin-padding-sm;
+          .circle{
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background: linear-gradient(90deg, #1e1945 -49%, #443c59 9%, #1d1921 234%);
+            background-size: 200% 100%;
+            background-position: 0;
+            animation: skeletonMove 3s infinite linear;
+            transform: rotate(45deg);
+            @keyframes skeletonMove {
+              0%{
+                background-position: 0;
+              } 
+              100%{
+                background-position: 400%;
+              }
+            }
+          }
+        }
+      }
+      .skeleton-title{
+        width: 70%;
+        height: 35px;
+        border-radius: 50px;
+        background: linear-gradient(90deg, #404057, #404057 20%, #493b73 50%, #404057 85%, #404057);
+        background-size: 200% 100%;
+        background-position: 0;
+        animation: skeletonMove 4s infinite linear;
+      }
+      .skeleton-border{
+        width: 70%;
+        height: 2px;
+        background-color: $border-color-white !important;
+        border-radius: 10px;
+      }
+      .skeleton-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .line{
+          width: 90%;
+          height: 15px;
+          border-radius: 50px;
+          background: linear-gradient(90deg, #404057, #404057 20%, #493b73 50%, #404057 85%, #404057);
+          background-size: 200% 100%;
+          background-position: 0;
+          animation: skeletonMove 4s infinite linear;
+        }
+      }
+      .skeleton-link{
+        width: 60%;
+          height: 45px;
+          border-radius: 50px;
+          background: linear-gradient(90deg, #404057, #404057 20%, #493b73 50%, #404057 85%, #404057);
+          background-size: 200% 100%;
+          background-position: 0;
+          animation: skeletonMove 4s infinite linear;
+      }
+    }
+  }
+  #post{
+    .post-inner{
+      background: radial-gradient(#3f3c4e, #211E2E);
+      border-radius: 30px;
+      padding: $margin-padding-lg;
+      .post-image{
+        .post-image-inner{
+          width: 170px;
+          height: 170px;
+          border-radius: 100%;
+          background-color: #0e0e0e5a;
+          padding: $margin-padding-sm;
+          img{
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            display: block;
+          }
+        }
+      }
+      .post-title{
+        border-bottom: 2px solid $border-color-white;
+      }
+      .post-text{
+        color: $text-color-white;
+      }
+      .post-link{
+        width: 60%;
+        background: linear-gradient(90deg, #7d6b9c, #6f5e8f 20%, #5a4b76 50%, #6f5e8f 85%, #7d6b9c);
+        border-radius: 50px;
+        padding: 5px;
+        background-size: 200% 100%;
+        background-position: 0;
+        &:hover + .arrow-right{
+          .line{
+            width: 40px;
+          }
+          .right{
+            left: 18px;
+          }
+        }
+        button{
+          width: 100%;
+          background: linear-gradient(to right, #2d1f41bd, #251f41b6);
+          padding: 10px 20px;
+          color: $text-white;
+          border-radius: 50px;
+          vertical-align: 1px;
+          border: 0;
+          outline: 0;
+          transition: 0.4313s ease;
+        }
+      }
+    }
+  }
+}
+
+// Card
 
 // Animation
 

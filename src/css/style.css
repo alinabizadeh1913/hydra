@@ -59,7 +59,7 @@
 }
 @font-face {
   font-family: font-6;
-  src: url("..//fonts/Montserrat-Regular.svg") format("svg");
+  src: url("../fonts/Montserrat-Regular.svg") format("svg");
   src: url("../fonts/Montserrat-Regular.ttf") format("ttf");
   src: url("../fonts/Montserrat-Regular.woff") format("woff");
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
@@ -493,6 +493,171 @@ h1, h2, h3, h4, h5, h6 {
   width: 23px;
   border-radius: 10px;
   transition: 0.313s ease;
+}
+
+#why-build {
+  margin: 65px 0;
+}
+#why-build .why-build-left .title {
+  cursor: default;
+}
+#why-build .why-build-left .with-hydra {
+  color: #c4b2f8;
+}
+#why-build .why-build-left .with-hydra span {
+  cursor: pointer;
+}
+#why-build .why-build-left .with-hydra span:hover + .arrow-right .line {
+  width: 95px;
+}
+#why-build .why-build-left .with-hydra span:hover + .arrow-right .right {
+  left: 73px;
+}
+#why-build .why-build-left .with-hydra .arrow-right {
+  user-select: none;
+}
+#why-build .why-build-left .with-hydra .arrow-right .right {
+  width: 16px;
+  height: 16px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+  transition: 0.313s ease;
+  position: relative;
+  left: 61px;
+  border-radius: 2px;
+}
+#why-build .why-build-left .with-hydra .arrow-right .line {
+  position: absolute;
+  height: 2.5px;
+  background-color: #fff;
+  top: 6.5px;
+  left: -6px;
+  width: 83px;
+  border-radius: 10px;
+  transition: 0.313s ease;
+}
+#why-build .why-build-right .text {
+  color: #c4b2f8;
+}
+
+#cards #skeleton .skeleton-inner {
+  background: radial-gradient(#3f3c4e, #211E2E);
+  border-radius: 30px;
+  padding: 20px;
+}
+#cards #skeleton .skeleton-inner .skeleton-image .skeleton-image-inner {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  background-color: rgba(14, 14, 14, 0.3529411765);
+  padding: 10px;
+}
+#cards #skeleton .skeleton-inner .skeleton-image .skeleton-image-inner .circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: linear-gradient(90deg, #1e1945 -49%, #443c59 9%, #1d1921 234%);
+  background-size: 200% 100%;
+  background-position: 0;
+  animation: skeletonMove 3s infinite linear;
+  transform: rotate(45deg);
+}
+@keyframes skeletonMove {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+#cards #skeleton .skeleton-inner .skeleton-title {
+  width: 70%;
+  height: 35px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #404057, #404057 20%, #493b73 50%, #404057 85%, #404057);
+  background-size: 200% 100%;
+  background-position: 0;
+  animation: skeletonMove 4s infinite linear;
+}
+#cards #skeleton .skeleton-inner .skeleton-border {
+  width: 70%;
+  height: 2px;
+  background-color: rgba(196, 178, 248, 0.2980392157) !important;
+  border-radius: 10px;
+}
+#cards #skeleton .skeleton-inner .skeleton-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cards #skeleton .skeleton-inner .skeleton-text .line {
+  width: 90%;
+  height: 15px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #404057, #404057 20%, #493b73 50%, #404057 85%, #404057);
+  background-size: 200% 100%;
+  background-position: 0;
+  animation: skeletonMove 4s infinite linear;
+}
+#cards #skeleton .skeleton-inner .skeleton-link {
+  width: 60%;
+  height: 45px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #404057, #404057 20%, #493b73 50%, #404057 85%, #404057);
+  background-size: 200% 100%;
+  background-position: 0;
+  animation: skeletonMove 4s infinite linear;
+}
+#cards #post .post-inner {
+  background: radial-gradient(#3f3c4e, #211E2E);
+  border-radius: 30px;
+  padding: 20px;
+}
+#cards #post .post-inner .post-image .post-image-inner {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  background-color: rgba(14, 14, 14, 0.3529411765);
+  padding: 10px;
+}
+#cards #post .post-inner .post-image .post-image-inner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  display: block;
+}
+#cards #post .post-inner .post-title {
+  border-bottom: 2px solid rgba(196, 178, 248, 0.2980392157);
+}
+#cards #post .post-inner .post-text {
+  color: #c4b2f8;
+}
+#cards #post .post-inner .post-link {
+  width: 60%;
+  background: linear-gradient(90deg, #7d6b9c, #6f5e8f 20%, #5a4b76 50%, #6f5e8f 85%, #7d6b9c);
+  border-radius: 50px;
+  padding: 5px;
+  background-size: 200% 100%;
+  background-position: 0;
+}
+#cards #post .post-inner .post-link:hover + .arrow-right .line {
+  width: 40px;
+}
+#cards #post .post-inner .post-link:hover + .arrow-right .right {
+  left: 18px;
+}
+#cards #post .post-inner .post-link button {
+  width: 100%;
+  background: linear-gradient(to right, rgba(45, 31, 65, 0.7411764706), rgba(37, 31, 65, 0.7137254902));
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 50px;
+  vertical-align: 1px;
+  border: 0;
+  outline: 0;
+  transition: 0.4313s ease;
 }
 
 .bg-move {
