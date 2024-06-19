@@ -6,12 +6,13 @@ import Introduction from "../../Components/Introduction/Introduction";
 import About from "../../Components/About/About";
 import WhyBuild from "../../Components/WhyBuild/WhyBuild";
 import Cards from "../../Components/Card/Cards";
+import Technologies from "../../Components/Technologies/Technologies";
 
 const Home = () => {
 
-    useEffect(() => {
-        window.scrollTo(0,0)
-    })
+    // useEffect(() => {
+    //     window.scrollTo(0,0)
+    // })
 
     return (
         <React.Fragment>
@@ -22,6 +23,7 @@ const Home = () => {
             <About />
             <WhyBuild />
             <Cards />
+            <Technologies />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </React.Fragment>
     )

@@ -5,6 +5,11 @@ const Navbar = () => {
     const navbar = useRef();
     const join = useRef();
 
+    const goToContact = () => {
+        const contactElem = document.querySelector('#contact');
+        contactElem.scrollIntoView(false)
+    }
+    
     useEffect(() => {
         join.current.addEventListener('mouseover', (e) => {
             const { currentTarget } = e;
@@ -58,11 +63,14 @@ const Navbar = () => {
                         </a>
                         <a href="#howto">
                             <i class="fa-solid fa-question mx-2"></i>
-                            HOW TO
+                            HOW BUILD
                         </a>
                     </div>
                     <div className="contact-join">
-                        <a href="#contact" className="contact d-none d-lg-inline">
+                        <a href="" className="contact d-none d-lg-inline" onClick={e => {
+                            e.preventDefault();
+                            goToContact()
+                        }}>
                         <button>
                             CONTACT US
                         </button>

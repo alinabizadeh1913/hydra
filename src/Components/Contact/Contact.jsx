@@ -29,6 +29,7 @@ export default class Contact extends React.Component {
         }
 
         this.contactInner = React.createRef();
+        this.contactElem = React.createRef();
     }
 
     handleLeftArrowClick = () => {
@@ -56,7 +57,7 @@ export default class Contact extends React.Component {
     render() {
         return (
             <section className="px-3">
-                <div id="contact" className="container position-relative">
+                <div id="contact" className="container position-relative" ref={this.contactElem}>
                     <div className="arrow d-flex justify-content-between px-3 w-100 position-absolute d-block d-lg-none">
                         <i className="fa-solid fa-angle-left" onClick={this.handleLeftArrowClick}></i>
                         <i className="fa-solid fa-angle-right" onClick={this.handleRightArrowClick}></i>
