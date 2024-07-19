@@ -177,7 +177,7 @@ $margin-padding-xl: 25px;
       left: 0;
       right: 0;
       top: 0px;
-      z-index: 5;
+      z-index: 50;
       transition: 0.313s ease;
   .navbar-inner{
     .logo{
@@ -391,7 +391,7 @@ $margin-padding-xl: 25px;
     width: 80%;
     height: 370px;
     padding: $margin-padding-sm + 2px;
-    background-color: #0d0d1436;
+    background-color: #b0b0ff36;
     border-radius: 85px 75px 80px 175px;
     img{
       width: 100%;
@@ -524,7 +524,7 @@ $margin-padding-xl: 25px;
   .about-left{
     .image{
       padding: 12px;
-      background: #0d0d1436;
+      background: #b0b0ff36;
       width: 75%;
       height: 460px;
       border-radius: 175px 90px 185px 100px;
@@ -666,7 +666,7 @@ $margin-padding-xl: 25px;
 #cards{
   #skeleton{
     .skeleton-inner{
-      background: radial-gradient(#3f3c4e, #211E2E);
+      background: radial-gradient(#494364, #211E2E);
       border-radius: 30px;
       padding: $margin-padding-lg;
       .skeleton-image{
@@ -700,7 +700,7 @@ $margin-padding-xl: 25px;
         width: 70%;
         height: 35px;
         border-radius: 50px;
-        background: linear-gradient(90deg, #404057, #404057 20%, #493b73 50%, #404057 85%, #404057);
+        background: linear-gradient(90deg, #6c6698, #4d496d 42%, #4d496d -166%, #4d496d -92%, #6c6698);
         background-size: 200% 100%;
         background-position: 0;
         animation: skeletonMove 4s infinite linear;
@@ -720,7 +720,7 @@ $margin-padding-xl: 25px;
           width: 90%;
           height: 15px;
           border-radius: 50px;
-          background: linear-gradient(90deg, #404057, #404057 20%, #493b73 50%, #404057 85%, #404057);
+          background: linear-gradient(90deg, #6c6698, #4d496d 42%, #4d496d -166%, #4d496d -92%, #6c6698);
           background-size: 200% 100%;
           background-position: 0;
           animation: skeletonMove 4s infinite linear;
@@ -730,7 +730,7 @@ $margin-padding-xl: 25px;
         width: 60%;
           height: 45px;
           border-radius: 50px;
-          background: linear-gradient(90deg, #404057, #404057 20%, #493b73 50%, #404057 85%, #404057);
+          background: linear-gradient(90deg, #6c6698, #4d496d 42%, #4d496d -166%, #4d496d -92%, #6c6698);
           background-size: 200% 100%;
           background-position: 0;
           animation: skeletonMove 4s infinite linear;
@@ -739,7 +739,7 @@ $margin-padding-xl: 25px;
   }
   #post{
     .post-inner{
-      background: radial-gradient(#3f3c4e, #211E2E);
+      background: radial-gradient(#494364, #211E2E);
       border-radius: 30px;
       padding: $margin-padding-lg;
       .post-image{
@@ -795,6 +795,70 @@ $margin-padding-xl: 25px;
 }
 
 // Card
+
+// Technologies
+
+#technologies{
+  .technologie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    border: 10px solid #b0b0ff36;
+    border-radius: 588px;
+    .arrow-wrapper{
+      bottom: -40px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      .arrow-bottom{
+        width: 70px;
+        height: 70px;
+        background-color: #0e0e0e96;
+        border-radius: 100%;
+        padding: 10px;
+        cursor: pointer;
+        i{
+          color: #433D60;
+          font-size: $font-xl + 10px;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          line-height: 1.7;
+          border-radius: 100%;
+          background: linear-gradient(to right, #8176AF,#C0B7E8);
+        }
+      }
+    }
+    .image{
+      border-radius: 200px;
+      overflow: hidden;
+      left: 0 ;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('../../public/img/img6.jpg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 0 27%;
+      filter: opacity(0.3) blur(4px);
+    }
+    .content{
+      z-index: 5;
+      user-select: none;
+      h3{
+        color: $text-color-white;
+      }
+    }
+  }
+}
+
+// Technologies
 
 // Animation
 

@@ -10,10 +10,10 @@ import Technologies from "../../Components/Technologies/Technologies";
 
 const Home = () => {
 
-    // useEffect(() => {
-    //     window.scrollTo(0,0)
-    // })
-
+    useEffect(() => {
+        window.scrollTo(0,0)
+    })
+    
     return (
         <React.Fragment>
             <Navbar />
@@ -24,7 +24,7 @@ const Home = () => {
             <WhyBuild />
             <Cards />
             <Technologies />
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </React.Fragment>
     )
 }

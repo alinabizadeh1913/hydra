@@ -27,16 +27,6 @@ const Navbar = () => {
         })
     }, [])
 
-    useLayoutEffect(() => {
-        window.addEventListener('scroll', e => {
-            const scrollY = window.scrollY;
-            if (scrollY > 150) {
-                navbar.current.style.background = '#5c19af70'
-            }else{
-                navbar.current.style.background = ''
-            }
-        })
-    }, [])
     
     return (
         <section id="navbar" ref={navbar}>

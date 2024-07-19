@@ -5,13 +5,11 @@ import Home from './Pages/Home/Home';
 
 const App = () => {
     return (
-        <React.Fragment>
-            <Router>
-                <Routes>
-                    <Route path='/' element={<Home />}/>
-                </Routes>
-            </Router>
-        </React.Fragment>
+        <Router>
+            <Routes>
+                <Route path='/' element={<Home />}/>
+            </Routes>
+        </Router>
     )
 }
 
