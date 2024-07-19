@@ -7,6 +7,7 @@ import About from "../../Components/About/About";
 import WhyBuild from "../../Components/WhyBuild/WhyBuild";
 import Cards from "../../Components/Card/Cards";
 import Technologies from "../../Components/Technologies/Technologies";
+import HowWeBuild from "../../Components/HowWeBuild/HowWeBuild";
 
 const Home = () => {
 
@@ -23,6 +24,7 @@ const Home = () => {
             <About />
             <WhyBuild />
             <Cards />
+            <HowWeBuild />
             <Technologies />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </React.Fragment>

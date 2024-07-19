@@ -488,8 +488,8 @@ $margin-padding-xl: 25px;
         .right{
           width: 16px;
           height: 16px;
-          border-top: 3px solid #fff;
-          border-right: 3px solid #fff;
+          border-top: 3px solid $text-color-white;
+          border-right: 3px solid $text-color-white;
           transform: rotate(45deg);
           transition: 0.313s ease;
           position: relative;
@@ -499,7 +499,7 @@ $margin-padding-xl: 25px;
         .line{
           position: absolute;
           height: 2.5px;
-          background-color: #fff;
+          background-color: $text-color-white;
           top: 6.5px;
           left: -6px;
           width: 83px;
@@ -631,8 +631,8 @@ $margin-padding-xl: 25px;
         .right{
           width: 16px;
           height: 16px;
-          border-top: 3px solid #fff;
-          border-right: 3px solid #fff;
+          border-top: 3px solid $text-color-white;
+          border-right: 3px solid $text-color-white;
           transform: rotate(45deg);
           transition: 0.313s ease;
           position: relative;
@@ -642,7 +642,7 @@ $margin-padding-xl: 25px;
         .line{
           position: absolute;
           height: 2.5px;
-          background-color: #fff;
+          background-color: $text-color-white;
           top: 6.5px;
           left: -6px;
           width: 83px;
@@ -795,6 +795,62 @@ $margin-padding-xl: 25px;
 }
 
 // Card
+
+// How We Build
+
+#how-we-build{
+    margin: 65px 0;
+    .why-build-left{
+      .title{
+        cursor: default;
+      }
+      .with-hydra{
+        color: $text-color-white;
+        span{
+          cursor: pointer;
+          &:hover + .arrow-right{
+            .line{
+              width: 95px;
+            }
+            .right{
+              left: 73px;
+            }
+          }
+        }
+        .arrow-right{
+          user-select: none;
+          .right{
+            width: 16px;
+            height: 16px;
+            border-top: 3px solid $text-color-white;
+            border-right: 3px solid $text-color-white;
+            transform: rotate(45deg);
+            transition: 0.313s ease;
+            position: relative;
+            left: 61px;
+            border-radius: 2px;
+          }
+          .line{
+            position: absolute;
+            height: 2.5px;
+            background-color: $text-color-white;
+            top: 6.5px;
+            left: -6px;
+            width: 83px;
+            border-radius: 10px;
+            transition: 0.313s ease;
+          }
+        }
+      }
+    }
+    .why-build-right{
+      .text{
+        color: $text-color-white;
+      }
+    }
+}
+
+// How We Build
 
 // Technologies
 

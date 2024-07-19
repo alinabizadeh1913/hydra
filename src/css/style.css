@@ -400,8 +400,8 @@ h1, h2, h3, h4, h5, h6 {
 #introduction .intro-left .to-hydra-vr .arrow-right .right {
   width: 16px;
   height: 16px;
-  border-top: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-top: 3px solid #c4b2f8;
+  border-right: 3px solid #c4b2f8;
   transform: rotate(45deg);
   transition: 0.313s ease;
   position: relative;
@@ -411,7 +411,7 @@ h1, h2, h3, h4, h5, h6 {
 #introduction .intro-left .to-hydra-vr .arrow-right .line {
   position: absolute;
   height: 2.5px;
-  background-color: #fff;
+  background-color: #c4b2f8;
   top: 6.5px;
   left: -6px;
   width: 83px;
@@ -519,8 +519,8 @@ h1, h2, h3, h4, h5, h6 {
 #why-build .why-build-left .with-hydra .arrow-right .right {
   width: 16px;
   height: 16px;
-  border-top: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-top: 3px solid #c4b2f8;
+  border-right: 3px solid #c4b2f8;
   transform: rotate(45deg);
   transition: 0.313s ease;
   position: relative;
@@ -530,7 +530,7 @@ h1, h2, h3, h4, h5, h6 {
 #why-build .why-build-left .with-hydra .arrow-right .line {
   position: absolute;
   height: 2.5px;
-  background-color: #fff;
+  background-color: #c4b2f8;
   top: 6.5px;
   left: -6px;
   width: 83px;
@@ -658,6 +658,52 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
   outline: 0;
   transition: 0.4313s ease;
+}
+
+#how-we-build {
+  margin: 65px 0;
+}
+#how-we-build .why-build-left .title {
+  cursor: default;
+}
+#how-we-build .why-build-left .with-hydra {
+  color: #c4b2f8;
+}
+#how-we-build .why-build-left .with-hydra span {
+  cursor: pointer;
+}
+#how-we-build .why-build-left .with-hydra span:hover + .arrow-right .line {
+  width: 95px;
+}
+#how-we-build .why-build-left .with-hydra span:hover + .arrow-right .right {
+  left: 73px;
+}
+#how-we-build .why-build-left .with-hydra .arrow-right {
+  user-select: none;
+}
+#how-we-build .why-build-left .with-hydra .arrow-right .right {
+  width: 16px;
+  height: 16px;
+  border-top: 3px solid #c4b2f8;
+  border-right: 3px solid #c4b2f8;
+  transform: rotate(45deg);
+  transition: 0.313s ease;
+  position: relative;
+  left: 61px;
+  border-radius: 2px;
+}
+#how-we-build .why-build-left .with-hydra .arrow-right .line {
+  position: absolute;
+  height: 2.5px;
+  background-color: #c4b2f8;
+  top: 6.5px;
+  left: -6px;
+  width: 83px;
+  border-radius: 10px;
+  transition: 0.313s ease;
+}
+#how-we-build .why-build-right .text {
+  color: #c4b2f8;
 }
 
 #technologies .technologie {
