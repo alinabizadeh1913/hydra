@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/Hydra/static/css/main.5880383f.css",
+    "main.js": "/Hydra/static/js/main.aff9ce01.js",
+    "static/media/Montserrat-Regular.svg": "/Hydra/static/media/Montserrat-Regular.99df018b461d91a04e59.svg",
+    "static/media/PragatiNarrow-Regular.svg": "/Hydra/static/media/PragatiNarrow-Regular.5103a1225151c24f62e9.svg",
+    "static/media/Anton-Regular.svg": "/Hydra/static/media/Anton-Regular.0bf4907738a8a4e65f25.svg",
+    "static/media/PragatiNarrow-Regular.eot": "/Hydra/static/media/PragatiNarrow-Regular.82e91164e5d9ef2e339f.eot",
+    "static/media/PragatiNarrow-Regular.ttf": "/Hydra/static/media/PragatiNarrow-Regular.58ce649138cf401a82ff.ttf",
+    "static/media/Montserrat-Regular.ttf": "/Hydra/static/media/Montserrat-Regular.7c8ccfe4b8a1b8ea2327.ttf",
+    "static/media/BebasNeue-Regular.svg": "/Hydra/static/media/BebasNeue-Regular.2a410173cfc69641decf.svg",
+    "static/media/Anton-Regular.eot": "/Hydra/static/media/Anton-Regular.0eb6155b75c1b2d3ce19.eot",
+    "static/media/Anton-Regular.ttf": "/Hydra/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
+    "static/media/MrDafoe-Regular.svg": "/Hydra/static/media/MrDafoe-Regular.c1411a3c2b5d9c35d80d.svg",
+    "static/media/PragatiNarrow-Regular.woff": "/Hydra/static/media/PragatiNarrow-Regular.338d8db1a7342f344a3a.woff",
+    "static/media/Lalezar-Regular.woff": "/Hydra/static/media/Lalezar-Regular.7af316fa253af019635a.woff",
+    "static/media/PragatiNarrow-Regular.woff2": "/Hydra/static/media/PragatiNarrow-Regular.60ff8ff3a549053dad7a.woff2",
+    "static/media/Montserrat-Regular.woff": "/Hydra/static/media/Montserrat-Regular.906372ffd37ae7316f3c.woff",
+    "static/media/img6.jpg": "/Hydra/static/media/img6.37dad3fad3614d62d0b3.jpg",
+    "static/media/Anton-Regular.woff": "/Hydra/static/media/Anton-Regular.2dfdfa3f41a8d27d6974.woff",
+    "static/media/Montserrat-Regular.woff2": "/Hydra/static/media/Montserrat-Regular.115d09fec2503456e2ea.woff2",
+    "static/media/BebasNeue-Regular.eot": "/Hydra/static/media/BebasNeue-Regular.851ef526255cba40074d.eot",
+    "static/media/BebasNeue-Regular.ttf": "/Hydra/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "static/media/Anton-Regular.woff2": "/Hydra/static/media/Anton-Regular.f2d4dd57785c2c3a4d2b.woff2",
+    "static/media/MrDafoe-Regular.eot": "/Hydra/static/media/MrDafoe-Regular.771e7f7c83f3f263cb45.eot",
+    "static/media/MrDafoe-Regular.ttf": "/Hydra/static/media/MrDafoe-Regular.76557091b77fecfd9411.ttf",
+    "static/media/BebasNeue-Regular.woff": "/Hydra/static/media/BebasNeue-Regular.07e5fdc6fd3011e264a9.woff",
+    "static/media/MrDafoe-Regular.woff": "/Hydra/static/media/MrDafoe-Regular.b61e733819878cf04a22.woff",
+    "static/media/BebasNeue-Regular.woff2": "/Hydra/static/media/BebasNeue-Regular.8eefcd4284319e1eb4ca.woff2",
+    "static/media/MrDafoe-Regular.woff2": "/Hydra/static/media/MrDafoe-Regular.b6b6d919058631f03908.woff2",
+    "index.html": "/Hydra/index.html",
+    "main.5880383f.css.map": "/Hydra/static/css/main.5880383f.css.map",
+    "main.aff9ce01.js.map": "/Hydra/static/js/main.aff9ce01.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5880383f.css",
+    "static/js/main.aff9ce01.js"
+  ]
+}
