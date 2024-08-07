@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Hydra/static/css/main.5880383f.css",
-    "main.js": "/Hydra/static/js/main.aff9ce01.js",
+    "main.js": "/Hydra/static/js/main.a6e3eb5c.js",
     "static/media/Montserrat-Regular.svg": "/Hydra/static/media/Montserrat-Regular.99df018b461d91a04e59.svg",
     "static/media/PragatiNarrow-Regular.svg": "/Hydra/static/media/PragatiNarrow-Regular.5103a1225151c24f62e9.svg",
     "static/media/Anton-Regular.svg": "/Hydra/static/media/Anton-Regular.0bf4907738a8a4e65f25.svg",
@@ -30,10 +30,10 @@
     "static/media/MrDafoe-Regular.woff2": "/Hydra/static/media/MrDafoe-Regular.b6b6d919058631f03908.woff2",
     "index.html": "/Hydra/index.html",
     "main.5880383f.css.map": "/Hydra/static/css/main.5880383f.css.map",
-    "main.aff9ce01.js.map": "/Hydra/static/js/main.aff9ce01.js.map"
+    "main.a6e3eb5c.js.map": "/Hydra/static/js/main.a6e3eb5c.js.map"
   },
   "entrypoints": [
     "static/css/main.5880383f.css",
-    "static/js/main.aff9ce01.js"
+    "static/js/main.a6e3eb5c.js"
   ]
 }
