@@ -1,4 +1,11 @@
 @media screen and (max-width: 992px) {
+  #vr-design .vr-item {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+  #vr-design .vr-item .subject {
+    transform: unset !important;
+  }
   .background1, .background2 {
     display: none !important;
   }
@@ -14,6 +21,9 @@
   }
 }
 @media screen and (min-width: 992px) {
+  #vr-design .vr-item {
+    width: 370px !important;
+  }
   .background1, .background2 {
     display: block !important;
   }
@@ -704,6 +714,50 @@ h1, h2, h3, h4, h5, h6 {
 }
 #how-we-build .why-build-right .text {
   color: #c4b2f8;
+}
+
+#vr-design .vr-item {
+  width: 100%;
+}
+#vr-design .vr-item .number-wrapper {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  background-color: rgba(19, 19, 24, 0.2745098039);
+  padding: 15px;
+  cursor: pointer;
+}
+#vr-design .vr-item .number-wrapper .number {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: linear-gradient(55deg, #C0B7E8, #8176AF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #343045;
+}
+#vr-design .vr-item .number-link:hover + .subject-wrapper .subject {
+  transform: translateX(0) !important;
+}
+#vr-design .vr-item .number-link:hover + .subject-wrapper .subject i {
+  margin: 0 8px !important;
+}
+#vr-design .vr-item .subject {
+  user-select: none;
+  transform: translateX(-29px);
+  transition: 0.313s ease;
+}
+#vr-design .vr-item .subject i {
+  color: #C0B7E8;
+  margin: 0 30px 0 0;
+  transition: 0.4313s ease;
+}
+#vr-design .vr-item .subject h4 {
+  line-height: 36px;
+  text-decoration: underline;
 }
 
 #technologies .technologie {

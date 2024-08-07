@@ -8,6 +8,7 @@ import WhyBuild from "../../Components/WhyBuild/WhyBuild";
 import Cards from "../../Components/Card/Cards";
 import Technologies from "../../Components/Technologies/Technologies";
 import HowWeBuild from "../../Components/HowWeBuild/HowWeBuild";
+import VRDesign from "../../Components/VRDesign/VRDesign";
 
 const Home = () => {
 
@@ -24,9 +25,12 @@ const Home = () => {
             <About />
             <WhyBuild />
             <Cards />
-            <HowWeBuild />
+            <HowWeBuild display={'d-none d-lg-block'}/>
+            <VRDesign display={'d-none d-lg-block'}/>
             <Technologies />
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <HowWeBuild display={'d-block d-lg-none'}/>
+            <VRDesign display={'d-block d-lg-none'}/>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </React.Fragment>
     )
 }

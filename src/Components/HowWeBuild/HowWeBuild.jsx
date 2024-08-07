@@ -1,8 +1,8 @@
 import React from "react"
 
-const HowWeBuild = () => {
+const HowWeBuild = ({display}) => {
     return (
-        <section id="how-we-build" className="my-5">
+        <section id="how-we-build" className={`${display} my-5`}>
             <div className="container">
                 <div className="row justify-content-between">
                     <div className="col-12 col-lg-5">
