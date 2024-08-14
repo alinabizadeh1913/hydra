@@ -27,7 +27,7 @@ export default class Post extends React.Component {
     render() {
         const posts = this.props.data && this.props.data.map(post => {
             return (
-                <div className="col-12 col-md-6 col-lg-3 my-2" key={post.id}>
+                <div className="col-12 col-lg-3 my-2 px-5 px-lg-2" key={post.id}>
                     <div className="post-inner d-flex flex-column flex-wrap justify-content-center align-items-center">
                         <div className="post-image d-flex justify-content-center">
                             <div className="post-image-inner">
@@ -50,7 +50,7 @@ export default class Post extends React.Component {
         })
 
         return (
-            <div className="row g-2" id="post">
+            <div className="d-flex" id="post" style={{transform : `translateX(${this.props.translate}%)`}}>
                 {posts}
             </div>
         )

@@ -2,7 +2,7 @@
 
 // Color
 $text-color-dark : #332957;
-$text-color-white : #c4b2f8;
+$text-color-white : #ece6ff;
 $text-dark : #000;
 $text-white : #fff;
 $bg-white : #fff;
@@ -66,6 +66,20 @@ $margin-padding-xl: 25px;
 
 }
 @media screen and (min-width : 992px) {
+
+  #cards{
+    #post{
+      transform: translateX(0) !important;
+      .post-inner{
+        height: auto !important;
+      }
+    }
+    #skeleton{
+      .skeleton-inner{
+        height: auto !important;
+      }
+    }
+  }
 
   #vr-design{
     .vr-item{
@@ -148,7 +162,7 @@ $margin-padding-xl: 25px;
   body{
     overflow-x: hidden;
     background-repeat: no-repeat;
-    background-color: #302C42;
+    background-color: #1a2648;
     zoom: 80%;
   }
 
@@ -208,7 +222,7 @@ $margin-padding-xl: 25px;
       }
       p{
         font-size: $font-xl + 15px;
-        background: linear-gradient(90deg,#9873c2,#8269a6 20%, #c1addb 50%,#8269a6 85%,#9873c2);
+        background: linear-gradient(90deg, #656dd6, #9ca3ff 20%, #8186c7 50%, #9ca3ff 85%, #656dd6);
         background-position: 0;
         background-size: 200% 100%;
         -webkit-background-clip: text;
@@ -245,8 +259,8 @@ $margin-padding-xl: 25px;
         border-radius: 50px;
         transition: 0.313s ease;
         &:hover{
-          background-color: #7736ffeb;
-          border-color: #7736ffeb;
+          background-color: rgb(50 27 129 / 92%);
+          border-color: rgb(50 27 129 / 92%);
         }
         button{
           color: $text-white;
@@ -254,7 +268,7 @@ $margin-padding-xl: 25px;
         }
       }
       .join{
-        background: linear-gradient(90deg, #7d6b9c, #6f5e8f 20%, #5a4b76 50%, #6f5e8f 85%, #7d6b9c);
+        background: linear-gradient(90deg, #3935c9, #3935c9 20%, #472aac 50%, #594382 85%, #3935c9);
         border-radius: 50px;
         padding: 7px 3px;
         background-size: 200% 100%;
@@ -265,7 +279,7 @@ $margin-padding-xl: 25px;
           }
         }
         button{
-          background: linear-gradient(to right, #2d1f41bd, #251f41b6);
+          background: linear-gradient(to right, #0f1b4adc, #0f1b4ac3);
           padding: 4px 20px;
           color: $text-white;
           border-radius: 50px;
@@ -303,22 +317,22 @@ $margin-padding-xl: 25px;
 #header{
   .main-subject{
     .background1{
-      width: 350px;
-      height: 350px;
+      width: 400px;
+      height: 400px;
       top: 44%;
       left: 25%;
-      background: radial-gradient(#520bad7d 3%, transparent 66%);
+      background: radial-gradient(#23518ba8 0%, transparent 66%);
       border-radius: 100%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       z-index: -1;
       animation: blur 3s infinite ease-in;
     }
     .background2{
-      width: 250px;
-      height: 250px;
+      width: 270px;
+      height: 270px;
       top: 68%;
       left: 43%;
-      background: radial-gradient(rgb(110 20 155 / 37%) 18%, transparent 69%);
+      background: radial-gradient(#3138b76f 18%, transparent 69%);
       border-radius: 100%;
       transform: translate(-50%, -50%);
       z-index: -1;
@@ -337,7 +351,7 @@ $margin-padding-xl: 25px;
     }
     h1{
       .special-text{
-        background: linear-gradient(90deg,#af89db,#8269a6 20%, #beacd6 50%,#8269a6 85%,#af89db);
+        background: linear-gradient(90deg, #656dd6, #9ca3ff 20%, #8186c7 50%, #9ca3ff 85%, #656dd6);
         -webkit-text-fill-color: transparent;
         background-position: 0;
         background-size: 200% 100%;
@@ -352,7 +366,7 @@ $margin-padding-xl: 25px;
     .build-your-world{
       .build-your-world-btn{
         width: 60%;
-        background: linear-gradient(90deg, #7d6b9c, #6f5e8f 20%, #5a4b76 50%, #6f5e8f 85%, #7d6b9c);
+        background: linear-gradient(90deg, #3935c9, #3935c9 20%, #472aac 50%, #594382 85%, #3935c9);
         border-radius: 50px;
         padding: 5px;
         background-size: 200% 100%;
@@ -367,7 +381,7 @@ $margin-padding-xl: 25px;
         }
         button{
           width: 100%;
-          background: linear-gradient(to right, #2d1f41bd, #251f41b6);
+          background: linear-gradient(to right, #0f1b4adc, #0f1b4ac3);
           padding: 10px 20px;
           color: $text-white;
           border-radius: 50px;
@@ -429,7 +443,7 @@ $margin-padding-xl: 25px;
   padding: $margin-padding-xl + 5px $margin-padding-md + 2px;
   border-radius: 100px;
   overflow: hidden;
-  background: linear-gradient(to right, rgb(35 34 55 / 95%) 10%, rgba(63, 57, 81, 0.963) 50%, rgb(35 34 55 / 95%) 90%);
+  background: linear-gradient(to right, rgb(49 79 111 / 95%) 10%, rgb(255 255 255 / 2%) 50%, rgb(40 77 126) 90%);
   .arrow{
     top: 37%;
     left: 0;
@@ -567,7 +581,7 @@ $margin-padding-xl: 25px;
     .lets-get-in-touch{
       .lets-get-in-touch-btn{
         width: 60%;
-        background: linear-gradient(90deg, #7d6b9c, #6f5e8f 20%, #5a4b76 50%, #6f5e8f 85%, #7d6b9c);
+        background: linear-gradient(90deg, #3935c9, #3935c9 20%, #472aac 50%, #594382 85%, #3935c9);
         border-radius: 50px;
         padding: 5px;
         background-size: 200% 100%;
@@ -582,7 +596,7 @@ $margin-padding-xl: 25px;
         }
         button{
           width: 100%;
-          background: linear-gradient(to right, #2d1f41bd, #251f41b6);
+          background: linear-gradient(to right, #0f1b4adc, #0f1b4ac3);
           padding: 10px 20px;
           color: $text-white;
           border-radius: 50px;
@@ -682,10 +696,12 @@ $margin-padding-xl: 25px;
 // Card
 
 #cards{
+  user-select: none;
   #skeleton{
     .skeleton-inner{
-      background: radial-gradient(#494364, #211E2E);
+      background: radial-gradient(#394eb5, #061d3d);
       border-radius: 30px;
+      height: 550px;
       padding: $margin-padding-lg;
       .skeleton-image{
         .skeleton-image-inner{
@@ -756,10 +772,12 @@ $margin-padding-xl: 25px;
     }
   }
   #post{
+    transition: 0.313s ease;
     .post-inner{
-      background: radial-gradient(#494364, #211E2E);
+      background: radial-gradient(#394eb5, #061d3d);
       border-radius: 30px;
       padding: $margin-padding-lg;
+      height: 550px;
       .post-image{
         .post-image-inner{
           width: 170px;
@@ -780,10 +798,11 @@ $margin-padding-xl: 25px;
       }
       .post-text{
         color: $text-color-white;
+        text-align: center;
       }
       .post-link{
         width: 60%;
-        background: linear-gradient(90deg, #7d6b9c, #6f5e8f 20%, #5a4b76 50%, #6f5e8f 85%, #7d6b9c);
+        background: linear-gradient(90deg, #3935c9, #3935c9 20%, #472aac 50%, #594382 85%, #3935c9);
         border-radius: 50px;
         padding: 5px;
         background-size: 200% 100%;
@@ -798,7 +817,7 @@ $margin-padding-xl: 25px;
         }
         button{
           width: 100%;
-          background: linear-gradient(to right, #2d1f41bd, #251f41b6);
+          background: linear-gradient(to right, #0f1b4adc, #0f1b4ac3);
           padding: 10px 20px;
           color: $text-white;
           border-radius: 50px;
@@ -807,6 +826,35 @@ $margin-padding-xl: 25px;
           outline: 0;
           transition: 0.4313s ease;
         }
+      }
+    }
+  }
+  .arrow-wrapper{
+    position: absolute;
+    top: 44%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
+    .icon{
+      width: 55px;
+      height: 55px;
+      background-color: #0f0f14a3;
+      border-radius: 100%;
+      padding: 8px;
+      i{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 1.7;
+        background: linear-gradient(to right,#8176AF,#C0B7E8);
+        color: #433D60;
+        font-size: 23px;
+        cursor: pointer;
       }
     }
   }

@@ -7,10 +7,14 @@ export default class Cards extends React.Component {
         super(props);
         this.state = {
           readyToGetPosts : false,
-          post : null
+          post : null,
+          translate : 0,
+          currentPost : 0
         }
 
         this.cardSection = React.createRef();
+        this.baseUrl = "https://gist.githubusercontent.com/alinabizadeh1913/2c47e37743ffde5f8f70a70a4e27edc4/raw/c1d7d68171f562da563b71c1e8c5c6f74f390382/db.json";
+        this.current = 0;
     }
 
     componentDidMount() {
@@ -19,11 +23,33 @@ export default class Cards extends React.Component {
 
     componentDidUpdate(prevProps,prevState){
       if(prevState.readyToGetPosts !== this.state.readyToGetPosts) {
-        fetch('http://localhost:5000/Posts').then(response => response.json()).then(result => {
+        fetch(this.baseUrl).then(response => response.json()).then(result => {
           this.setState({
-            post : result
+            post : result.Posts
           })
         }).catch(e => console.log(e))
+      }
+    }
+
+    handleRightIconClick() {
+      if (this.state.post !== null) {
+        if (this.current < this.state.post.length - 1) {
+          this.current = this.current + 1;
+        }
+      }
+      this.setState({
+        translate : `-${this.current * 100}`
+      })
+    }
+
+    handleLeftIconClick() {
+      if (this.current > 0) {
+        this.current = this.current - 1;
+        this.setState(state => {
+          return {
+            translate : Number(state.translate) + 100
+          }
+        })
       }
     }
 
@@ -34,17 +60,25 @@ export default class Cards extends React.Component {
             this.setState({
               readyToGetPosts : true
             })
-          }, 2000)
+          }, 1400)
       }
     }
 
     render() {
         return (
           <section id="cards" ref={this.cardSection}>
-            <div className="container">
+            <div className="container position-relative">
                 {
-                  this.state.post ? <Post data={this.state.post} /> : <Skeleton />
+                  this.state.post ? <Post data={this.state.post} translate={this.state.translate} /> : <Skeleton />
                 }
+                <div className="arrow-wrapper d-flex d-lg-none">
+                  <div className="icon">
+                    <i class="fa-solid fa-angle-left" onClick={this.handleLeftIconClick.bind(this)}></i>
+                  </div>
+                  <div className="icon">
+                    <i class="fa-solid fa-angle-right" onClick={this.handleRightIconClick.bind(this)}></i>
+                  </div>
+                </div>
             </div>
           </section>
         )
