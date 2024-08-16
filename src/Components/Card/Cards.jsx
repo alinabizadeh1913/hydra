@@ -71,7 +71,7 @@ export default class Cards extends React.Component {
                 {
                   this.state.post ? <Post data={this.state.post} translate={this.state.translate} /> : <Skeleton />
                 }
-                <div className="arrow-wrapper d-flex d-lg-none">
+                <div className="arrow-wrapper d-flex d-md-none">
                   <div className="icon">
                     <i class="fa-solid fa-angle-left" onClick={this.handleLeftIconClick.bind(this)}></i>
                   </div>

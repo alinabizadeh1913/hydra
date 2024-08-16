@@ -10,8 +10,8 @@ export default class Skeleton extends React.Component{
 
     render() {
         return (
-            <div className="d-flex" id="skeleton">
-                <div className="col-12 col-lg-3 my-2 px-5 px-lg-2">
+            <div className="d-flex flex-md-wrap" id="skeleton">
+                <div className="col-12 col-md-6 col-lg-3 my-3 px-5 px-lg-2">
                     <div className="skeleton-inner d-flex flex-column flex-wrap justify-content-center align-items-center">
                         <div className="skeleton-image d-flex justify-content-center">
                             <div className="skeleton-image-inner">
@@ -28,7 +28,7 @@ export default class Skeleton extends React.Component{
                         <div className="skeleton-link mt-4 mb-2"></div>
                     </div>
                 </div>
-                <div className="col-12 col-lg-3 my-2 px-5 px-lg-2">
+                <div className="col-12 col-md-6 col-lg-3 my-3 px-5 px-lg-2">
                     <div className="skeleton-inner d-flex flex-column flex-wrap justify-content-center align-items-center">
                         <div className="skeleton-image d-flex justify-content-center">
                             <div className="skeleton-image-inner">
@@ -45,7 +45,7 @@ export default class Skeleton extends React.Component{
                         <div className="skeleton-link mt-4 mb-2"></div>
                     </div>
                 </div>
-                <div className="col-12 col-lg-3 my-2 px-5 px-lg-2">
+                <div className="col-12 col-md-6 col-lg-3 my-3 px-5 px-lg-2">
                     <div className="skeleton-inner d-flex flex-column flex-wrap justify-content-center align-items-center">
                         <div className="skeleton-image d-flex justify-content-center">
                             <div className="skeleton-image-inner">
@@ -62,7 +62,7 @@ export default class Skeleton extends React.Component{
                         <div className="skeleton-link mt-4 mb-2"></div>
                     </div>
                 </div>
-                <div className="col-12 col-lg-3 my-2 px-5 px-lg-2">
+                <div className="col-12 col-md-6 col-lg-3 my-3 px-5 px-lg-2">
                     <div className="skeleton-inner d-flex flex-column flex-wrap justify-content-center align-items-center">
                         <div className="skeleton-image d-flex justify-content-center">
                             <div className="skeleton-image-inner">

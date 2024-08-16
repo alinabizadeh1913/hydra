@@ -1,51 +1,12 @@
-// store.js
-import create from 'zustand';
-
-const useStore = create(set => ({
-  todos: [],
-  addTodo: (todo) => set(state => ({ todos: [...state.todos, todo] })),
-  removeTodo: (index) => set(state => ({
-    todos: state.todos.filter((_, i) => i !== index)
-  }))
-}));
-
-export default useStore;
-
-// App.js
-import React, { useState } from 'react';
-import useStore from './store';
-
-function App() {
-  const [input, setInput] = useState('');
-  const todos = useStore(state => state.todos);
-  const addTodo = useStore(state => state.addTodo);
-  const removeTodo = useStore(state => state.removeTodo);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    addTodo({
-      text: input,
-      completed: false
-    });
-    setInput('');
-  };
-
-  return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input value={input} onChange={(e) => setInput(e.target.value)} />
-        <button type="submit">Add Todo</button>
-      </form>
-      <ul>
-        {todos.map((todo, index) => (
-          <li key={index}>
-            {todo.text}
-            <button onClick={() => removeTodo(index)}>Remove</button>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-export default App;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>

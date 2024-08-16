@@ -12,7 +12,9 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.30.2",
     "redux": "^5.0.1",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4",
     "zustand": "^4.5.2"
   },
@@ -23,7 +25,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "server" : "json-server --watch db.json --port 5000"
+    "server": "json-server --watch db.json --port 5000"
   },
   "eslintConfig": {
     "extends": [

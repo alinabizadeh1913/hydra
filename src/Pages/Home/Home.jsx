@@ -9,6 +9,9 @@ import Cards from "../../Components/Card/Cards";
 import Technologies from "../../Components/Technologies/Technologies";
 import HowWeBuild from "../../Components/HowWeBuild/HowWeBuild";
 import VRDesign from "../../Components/VRDesign/VRDesign";
+import Platform from "../../Components/Platform/Platform";
+import Join from "../../Components/Join";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
 
@@ -25,12 +28,12 @@ const Home = () => {
             <About />
             <WhyBuild />
             <Cards />
-            <HowWeBuild display={'d-none d-lg-block'}/>
-            <VRDesign display={'d-none d-lg-block'}/>
             <Technologies />
-            <HowWeBuild display={'d-block d-lg-none'}/>
-            <VRDesign display={'d-block d-lg-none'}/>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <Platform />
+            <HowWeBuild/>
+            <VRDesign/>
+            <Join />
+            <Footer />
         </React.Fragment>
     )
 }

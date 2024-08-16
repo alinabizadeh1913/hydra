@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
-const VRDesign = ({display}) => {
+const VRDesign = () => {
+
+    const vrSlider = useRef();
+    let translate = 0;
+    let currentCount = 0;
+
+    
+    const handleRightIconClick = () => {
+        setTimeout(() => {
+            console.log(currentCount,translate);
+        },200)
+        if (currentCount <= 2) {
+            currentCount += 1;
+            translate -= 100;
+            vrSlider.current.style.transform = `translateX(${translate}%)`
+        }
+    }
+
+    const handleLeftIconClick = () => {
+        if (currentCount > 0) {
+            currentCount -= 1;
+            translate += 100
+            vrSlider.current.style.transform = `translateX(${translate}%)`
+        }
+    }
+
     return (
-        <section id="vr-design" className={`${display} my-5`}>
-            <div className="container">
-                <div className="vr-wrapper d-flex justify-content-lg-center w-100">
+        <section id="vr-design">
+            <div className="container position-relative">
+                <div className="vr-wrapper d-flex flex-md-wrap flex-lg-nowrap justify-content-md-around justify-content-lg-center w-100" ref={vrSlider}>
                     <div className="vr-item px-5 d-flex flex-column justify-content-center align-items-center">
                         <a href="#" className="number-link">
                             <div className="number-wrapper">
@@ -74,6 +99,16 @@ const VRDesign = ({display}) => {
                         </div>
                     </div>
                 </div>
+
+                <div className="arrow-wrapper d-flex d-md-none">
+                  <div className="icon">
+                    <i class="fa-solid fa-angle-left" onClick={handleLeftIconClick}></i>
+                  </div>
+                  <div className="icon">
+                    <i class="fa-solid fa-angle-right" onClick={handleRightIconClick}></i>
+                  </div>
+                </div>
+
             </div>
         </section>
     )
