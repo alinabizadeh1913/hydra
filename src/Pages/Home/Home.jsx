@@ -16,14 +16,14 @@ import SideMenu from "../../Components/SideMenu/SideMenu";
 import AOS from 'aos';
 import '../../../node_modules/aos/dist/aos.css';
 import Loading from "../../Components/Loading";
-import { fadeOutLoading } from "../../Utils/fadeOutLoading";
+// import { fadeOutLoading } from "../../Utils/fadeOutLoading";
 
 const Home = () => {
 
     useEffect(() => {
         window.scrollTo(0,0);
         AOS.init();
-        fadeOutLoading();
+        // fadeOutLoading();
     })
     
     return (
