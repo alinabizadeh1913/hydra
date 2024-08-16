@@ -12,16 +12,25 @@ import VRDesign from "../../Components/VRDesign/VRDesign";
 import Platform from "../../Components/Platform/Platform";
 import Join from "../../Components/Join";
 import Footer from "../../Components/Footer/Footer";
+import SideMenu from "../../Components/SideMenu/SideMenu";
+import AOS from 'aos';
+import '../../../node_modules/aos/dist/aos.css';
+import Loading from "../../Components/Loading";
+import { fadeOutLoading } from "../../Utils/fadeOutLoading";
 
 const Home = () => {
 
     useEffect(() => {
-        window.scrollTo(0,0)
+        window.scrollTo(0,0);
+        AOS.init();
+        fadeOutLoading();
     })
     
     return (
         <React.Fragment>
+            <Loading />
             <Navbar />
+            <SideMenu />
             <Header />
             <Contact />
             <Introduction />

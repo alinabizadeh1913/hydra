@@ -28,7 +28,7 @@ const VRDesign = () => {
 
     return (
         <section id="vr-design">
-            <div className="container position-relative">
+            <div className="container position-relative overflow-hidden">
                 <div className="vr-wrapper d-flex flex-md-wrap flex-lg-nowrap justify-content-md-around justify-content-lg-center w-100" ref={vrSlider}>
                     <div className="vr-item px-5 d-flex flex-column justify-content-center align-items-center">
                         <a href="#" className="number-link">

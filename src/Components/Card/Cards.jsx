@@ -67,7 +67,7 @@ export default class Cards extends React.Component {
     render() {
         return (
           <section id="cards" ref={this.cardSection}>
-            <div className="container position-relative">
+            <div className="container position-relative overflow-hidden">
                 {
                   this.state.post ? <Post data={this.state.post} translate={this.state.translate} /> : <Skeleton />
                 }

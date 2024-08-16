@@ -1,4 +1,5 @@
 import React, { useEffect, useLayoutEffect, useRef } from "react";
+import { changeSideMenuState } from '../../Utils/changeSideMenuState'
 
 const Navbar = () => {
 
@@ -27,7 +28,10 @@ const Navbar = () => {
         })
     }, [])
 
-    
+    useLayoutEffect(() => {
+        changeSideMenuState();
+    }, [])
+
     return (
         <section id="navbar" ref={navbar}>
             <nav className="container py-4">
@@ -51,7 +55,7 @@ const Navbar = () => {
                             <i class="fa-solid fa-microchip mx-2"></i>
                             TECHNOLOGIES
                         </a>
-                        <a href="#howto">
+                        <a href="#how-we-build">
                             <i class="fa-solid fa-question mx-2"></i>
                             HOW BUILD
                         </a>
