@@ -25,7 +25,7 @@ const Introduction = () => {
                     </div>
                     <div className="col-12 col-lg-7 d-none d-lg-block">
                         <div className="intro-right">
-                            <p className="mb-0 text">
+                            <p className="mb-0 text line-clamp-4 line-clamp-md-6">
                                 Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
                             </p>
                         </div>
